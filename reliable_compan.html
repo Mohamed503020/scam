@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description"
+    content="موقع منصات الاحتيال مختص في تقييم شركات التداول والوساطة المالية العربية وكشف شركات تداول نصابة وتوجيه المتداولين الى شركات الاستثمار المرخصة&nbsp;والموثوقة">
+  <title>
+    الشركات النصابة
+  </title>
+  <link rel="icon" href="./assets/images/logo.svg" type="image/svg+xml" sizes="any" width="32" height="32"
+    viewBox="0 0 32 32">
+  <!-- font-awesome link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+ />
+  <!-- //google fonts (cairo,Tajawal,Roboto,Tajawal) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" >
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Roboto:wght@100&family=Tajawal:wght@400;700&display=swap"
+    rel="stylesheet">
+  <!-- bootstrap css file link  -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/shared.css">
+  <link rel="stylesheet" href="./css/scam.css">
+</head>
+
+<body>
+  <!-- ====satrt top Header ====== -->
+  <div class="top-header d-none d-lg-block  ">
+    <div class="container">
+      <ul class="me-auto">
+        <li><a href="#">اخلاء المسؤوليه</a></li>
+        <li><a href="#">الشروط والاحكام</a></li>
+        <li><a href="#">الخصوصية</a></li>
+        <li><a href="#">API</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- ====main Header === -->
+  <div class="main-header shadow">
+    <div class="container">
+      <div class="row  ">
+        <div class="col-lg-3 col-11">
+          <div class="logo w-100 d-flex align-items-center">
+            <a href="#">
+              <img loading="lazy" src="./assets/images/logo.svg" alt="موقع منصات الاحتيال" >
+            </a>
+          </div>
+        </div>
+        <div class="col-md-7 d-none d-lg-block ">
+          <div class="links d-flex text-center">
+            <ul>
+              <li>
+                <a href="#" id="peple_links"> أفراد
+                  <i class="fa-solid fa-chevron-down arrowicon arrowdownmo"></i>
+                </a>
+                <div class="menu menu1 shadow-lg border rounded" id="menu1">
+                  <h6><i class="fa-solid fa-people-group"></i> افراد </h6>
+                  <div class="links-menu d-flex flex-column gap-3 align-items-center justify-content-center">
+                    <a href>ابلاغ عن احتيال </a>
+                    <a href>خدمة استرجاع احوال الاحتيال</a>
+                    <a href>تقديم شكوى عن الاحتيال</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#" id="company_links"> شركات
+                  <i class="fa-solid fa-chevron-down arrowicon arrowdownmo"></i>
+                </a>
+                <div class="menu menu1 shadow-lg border rounded" id="menu2">
+                  <h6><i class="fa-solid fa-building"></i> الشركات </h6>
+                  <div class="links-menu d-flex flex-column gap-3 align-items-center justify-content-center">
+                    <a href>المطلبات لحساب شركة</a>
+                    <a href>بيانات الموقع API</a>
+                    <a href>تقديم شكوى عن الاحتيال</a>
+                    <a href>طلب الشركة</a>
+                    <a href>اجراء الاخطاء وازاله الانذار</a>
+                  </div>
+                </div>
+              </li>
+              <li><a href="#"> تحذيرات الاحتيال </a></li>
+              <li><a href="#"> الشركات والهيئات الحكومية</a></li>
+              <li>
+                <a href="#" id="legal_links"> 
+                  قانوني
+                  <i class="fa-solid fa-chevron-down arrowicon arrowdownmo"></i>
+                </a>
+                <div class="menu menu3 shadow-lg border rounded" id="menu3">
+                  <h6><i class="fa-solid fa-scale-balanced"></i>قانوني </h6>
+                  <div class="links-menu d-flex flex-column gap-3 align-items-center justify-content-center">
+                    <a href>سياسة نشر تحذيرات النصب</a>
+                    <a href>سياسة تقييم الشركات الموثوقة</a>
+                    <a href>سياسة نشر تقييم وتعليقات مستخدمين الموقع</a>
+                  <a href="#"> عن المنصة </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-1 d-none d-lg-block">
+          <div class="action  d-flex ">
+            <!-- <button class="btn btn-outline-dark seconnd-btn ">سماسرة</button> -->
+            <button class="btn  main-btn rounded fw-bold">تقديم شكوى احتيال
+            </button>
+          </div>
+        </div>
+        <div class="col-1 d-lg-none text-end d-flex justify-content-center ">
+          <div class="bar ">
+            <i class="fa-solid fa-bars" data-bs-toggle="modal" data-bs-target="#sidenav"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- // side nave in small screen Area  -->
+  <!-- Modal -->
+  <div class="modal fade" id="sidenav" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="d-flex justify-content-between align-items-center modal-header  ">
+          <a href="#"> <img loading="lazy" src="./assets/images/logo.svg" alt="موقع منصات الاحتيال" width="200" height="60"> </a>
+          <i class="fa-solid fa-square-xmark" data-bs-dismiss="modal" aria-label="Close"></i>
+        </div>
+        <hr>
+        <div class="modal-body p-0">
+          <div class=" model-line  d-flex align-items-center justify-content-between" id="sibar_Sub_link1">
+            <h6> افراد </h6>
+            <i class="fa-solid fa-chevron-up arrowicon arrowdownmo d-none" id="sibar_Sub_Uparow1"></i>
+            <i class="fa-solid fa-chevron-down arrowicon arrowdownmo" id="sibar_Sub_Updown1"></i>
+          </div>
+          <!-- // sub menu  -->
+
+          <div class="sub-menu text-muted  d-none mt-3 pb-2 d-flex flex-column gap-3" id="sibar_Sub_menu1">
+            <a href class="text-muted">ابلاغ عن احتيال </a>
+            <a href class="text-muted">خدمة استرجاع احوال الاحتيال</a>
+            <a href class="text-muted">تقديم شكوى عن الاحتيال</a>
+          </div>
+          <div class=" model-line  d-flex align-items-center justify-content-between" id="sibar_Sub_link2">
+            <h6>الشركات</h6>
+            <i class="fa-solid fa-chevron-up arrowicon arrowdownmo d-none" id="sibar_Sub_Uparow2"></i>
+            <i class="fa-solid fa-chevron-down arrowicon arrowdownmo" id="sibar_Sub_Updown2"></i>
+          </div>
+          <!-- // sub menu  -->
+          <div class="sub-menu mt-3 pb-2 d-flex d-none flex-column gap-3 " id="sibar_Sub_menu2">
+            <a href class="text-muted">المطلبات لحساب شركة</a>
+            <a href class="text-muted">بيانات الموقع API</a>
+            <a href class="text-muted">تقديم شكوى عن الاحتيال</a>
+            <a href class="text-muted">طلب الشركة</a>
+            <a href class="text-muted">اجراء الاخطاء وازاله الانذار</a>
+          </div>
+
+          <div class=" model-line  d-flex align-items-center justify-content-between" id="sibar_Sub_link3">
+            <h6>قانوني</h6>
+            <i class="fa-solid fa-chevron-up arrowicon arrowdownmo d-none" id="sibar_Sub_Uparow3"></i>
+            <i class="fa-solid fa-chevron-down arrowicon arrowdownmo" id="sibar_Sub_Updown3"></i>
+          </div>
+          <!-- // sub menu  -->
+          <div class="sub-menu mt-3 pb-2 d-flex d-none flex-column gap-3 " id="sibar_Sub_menu3">
+            <a href="#" class="text-muted" >سياسة نشر تحذيرات النصب</a>
+            <a href="#" class="text-muted">سياسة تقييم الشركات الموثوقة</a>
+            <a href="#" class="text-muted">سياسة نشر تقييم وتعليقات مستخدمين الموقع</a>
+            <a href="#" class="text-muted"> عن المنصة</a>
+          </div>
+          <div class=" model-line  d-flex align-items-center justify-content-between">
+            <a href="#">تحذير الاحتلال </a>
+          </div>
+          <div class=" model-line  d-flex align-items-center justify-content-between">
+            <a href="#">الشركات والهيئة الحكومية</a>
+          </div>
+
+          <div class="other_links d-flex flex-column text-muted justify-content-between">
+            <a href="#">اخلاء المسؤوليه</a>
+            <a href="#">الشروط والاحكام</a>
+            <a href="#">الخصوصية</a>
+            <a href="#">API</a>
+          </div>
+          <div class="services d-flex justify-content-center text-center">
+            <div class="box-service d-flex  align-items-center flex-column">
+              <div class="icon">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <g clip-path="url(#clip0_551_1974)">
+                    <path
+                      d="M12.0001 2.75C10.0718 2.75 8.1867 3.32183 6.58332 4.39317C4.97994 5.46451 3.73026 6.98726 2.9923 8.76884C2.25435 10.5504 2.06126 12.5108 2.43747 14.4021C2.81368 16.2934 3.74227 18.0307 5.10584 19.3943C6.4694 20.7579 8.20668 21.6865 10.098 22.0627C11.9893 22.4389 13.9497 22.2458 15.7313 21.5078C17.5129 20.7699 19.0356 19.5202 20.107 17.9168C21.1783 16.3134 21.7501 14.4284 21.7501 12.5C21.7472 9.91504 20.719 7.43679 18.8912 5.60894C17.0633 3.78109 14.5851 2.75293 12.0001 2.75ZM12.0002 18.5C11.7777 18.5 11.5602 18.4341 11.3752 18.3104C11.1902 18.1868 11.046 18.0111 10.9608 17.8056C10.8757 17.6 10.8534 17.3738 10.8968 17.1556C10.9402 16.9373 11.0473 16.7369 11.2047 16.5795C11.362 16.4222 11.5625 16.3151 11.7807 16.2717C11.9989 16.2282 12.2251 16.2505 12.4307 16.3357C12.6363 16.4208 12.812 16.565 12.9356 16.75C13.0592 16.935 13.1252 17.1525 13.1252 17.375C13.1252 17.6734 13.0066 17.9596 12.7957 18.1705C12.5847 18.3815 12.2985 18.5 12.0002 18.5ZM12.7501 13.9165V14.0005C12.7501 14.1994 12.6711 14.3901 12.5305 14.5308C12.3898 14.6714 12.199 14.7505 12.0001 14.7505C11.8012 14.7505 11.6105 14.6714 11.4698 14.5308C11.3291 14.3901 11.2501 14.1994 11.2501 14.0005V13.2505C11.2501 13.0515 11.3292 12.8608 11.4698 12.7201C11.6105 12.5795 11.8012 12.5005 12.0001 12.5005C12.371 12.5005 12.7335 12.3905 13.0418 12.1845C13.3502 11.9784 13.5905 11.6856 13.7324 11.343C13.8743 11.0004 13.9115 10.6234 13.8391 10.2597C13.7668 9.89595 13.5882 9.56186 13.326 9.29963C13.0637 9.03741 12.7296 8.85883 12.3659 8.78649C12.0022 8.71414 11.6252 8.75127 11.2826 8.89318C10.94 9.0351 10.6472 9.27542 10.4411 9.58376C10.2351 9.89211 10.1251 10.2546 10.1251 10.6255C10.1251 10.8244 10.0461 11.0151 9.90546 11.1558C9.76481 11.2964 9.57404 11.3755 9.37513 11.3755C9.17622 11.3755 8.98545 11.2964 8.8448 11.1558C8.70415 11.0151 8.62513 10.8244 8.62513 10.6255C8.62521 9.99014 8.80462 9.36774 9.14271 8.82985C9.4808 8.29196 9.96385 7.86042 10.5363 7.58487C11.1088 7.30931 11.7474 7.20093 12.3787 7.27219C13.01 7.34344 13.6084 7.59144 14.105 7.98767C14.6016 8.38389 14.9763 8.91225 15.186 9.51196C15.3957 10.1117 15.4318 10.7584 15.2903 11.3778C15.1488 11.9971 14.8353 12.5639 14.3859 13.0131C13.9366 13.4622 13.3696 13.7753 12.7501 13.9165Z"
+                      fill="#D50900" />
+                  </g>
+                  <defs>
+                    <clippath id="clip0_551_1974">
+                      <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
+                    </clippath>
+                  </defs>
+                </svg>
+              </div>
+              <h6 class="mt-2">طلب مساعدة</h6>
+            </div>
+            <div class="box-service d-flex  align-items-center flex-column">
+              <div class="icon">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <g clip-path="url(#clip0_551_1968)">
+                    <path
+                      d="M12 2.75C10.0716 2.75 8.18657 3.32183 6.58319 4.39317C4.97982 5.46451 3.73013 6.98726 2.99218 8.76884C2.25422 10.5504 2.06114 12.5108 2.43735 14.4021C2.81355 16.2934 3.74215 18.0307 5.10571 19.3943C6.46928 20.7579 8.20656 21.6865 10.0979 22.0627C11.9892 22.4389 13.9496 22.2458 15.7312 21.5078C17.5127 20.7699 19.0355 19.5202 20.1068 17.9168C21.1782 16.3134 21.75 14.4284 21.75 12.5C21.7471 9.91503 20.7189 7.43678 18.8911 5.60893C17.0632 3.78108 14.585 2.75292 12 2.75ZM11.25 8C11.25 7.80109 11.329 7.61032 11.4697 7.46967C11.6103 7.32902 11.8011 7.25 12 7.25C12.1989 7.25 12.3897 7.32902 12.5303 7.46967C12.671 7.61032 12.75 7.80109 12.75 8V13.25C12.75 13.4489 12.671 13.6397 12.5303 13.7803C12.3897 13.921 12.1989 14 12 14C11.8011 14 11.6103 13.921 11.4697 13.7803C11.329 13.6397 11.25 13.4489 11.25 13.25V8ZM12 17.75C11.7775 17.75 11.56 17.684 11.375 17.5604C11.19 17.4368 11.0458 17.2611 10.9606 17.0555C10.8755 16.85 10.8532 16.6238 10.8966 16.4055C10.94 16.1873 11.0472 15.9868 11.2045 15.8295C11.3618 15.6722 11.5623 15.565 11.7805 15.5216C11.9988 15.4782 12.225 15.5005 12.4305 15.5856C12.6361 15.6708 12.8118 15.815 12.9354 16C13.059 16.185 13.125 16.4025 13.125 16.625C13.125 16.9234 13.0065 17.2095 12.7955 17.4205C12.5845 17.6315 12.2984 17.75 12 17.75Z"
+                      fill="#D50900" />
+                  </g>
+                  <defs>
+                    <clippath id="clip0_551_1968">
+                      <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
+                    </clippath>
+                  </defs>
+                </svg>
+              </div>
+              <h6 class="mt-2">الابلاغ عن الشركات المحتالة</h6>
+            </div>
+            <div class="box-service d-flex  align-items-center flex-column">
+              <div class="icon">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none">
+                  <g clip-path="url(#clip0_551_1962)">
+                    <path
+                      d="M12.5 1L3.5 5V11C3.5 16.555 7.335 21.735 12.5 23C17.665 21.735 21.5 16.555 21.5 11V5L12.5 1ZM10.5 17L6.5 13L7.915 11.585L10.5 14.17L17.085 7.585L18.5 9L10.5 17Z"
+                      fill="#D50900" />
+                  </g>
+                  <defs>
+                    <clippath id="clip0_551_1962">
+                      <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                    </clippath>
+                  </defs>
+                </svg>
+              </div>
+              <h6 class="mt-2">قائمة بالشركات الموثوقة</h6>
+            </div>
+          </div>
+          <h6 class="text-center  footer">جميع الحقوق محفوظة © 2023 موقع منصات
+            الأحتيال</h6>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- //page content // -->
+  <div class="scamp-page reliabled_company">
+    <!-- / ====== العنواين ========/ -->
+    <div class="container mt-4">
+      <nav class="articaldetail-breadcum" aria-label="breadcrumb">
+      <ul>
+      <li><a href="" > <i class="fa-solid fa-house"></i> الرئيسية </a></li>
+      <li><a href=""> تقييم شركات التداول </a></li>
+      <li class="careerstext" aria-current="page">  بينانس Binance  </li>
+      </ul>
+      </nav>
+      </div>
+      <hr>
+            <!-- scamp company header (معلومات الشركة )  -->
+      <div class="container">
+      <div class="scapm-page-content">
+          <div class="company-state">
+            <header>
+              <div class="container">
+                <div class="d-flex justify-content-between flex-column flex-md-row">
+                  <div class="d-flex head-info">
+                    <div class="logo position-relative">
+                      <div class="state d-flex justify-content-center align-items-center">  
+                        <img src="./assets/images/scam/depen.svg" loading="lazy" alt="موثوقة" width="35" height="25">
+                       <span>موثوقة</span>
+                    </div>
+                      <div class=" d-flex justify-content-center align-items-center">
+                        <img src="./assets/images/scam/scamLogo.svg" loading="lazy" alt=" scmp company name">
+                      </div>
+                    </div>
+                    <div class="company_info">
+                      <h6 class="text-capitalize ">binance</h6>
+                      <div class="d-flex">
+                        <p class="country">
+                          <img src="./assets/images/scam/united-flag.svg" width="20px" height="20px" class="ms-2"
+                            loading="lazy" alt="الولايات المتحدة" loading="lazy">
+                            <span>
+                          المملكة المتحدة
+                        </span>
+                        </p>
+                        <p class=" me-1 me-sm-3 date">
+                          <img src="./assets/images/scam/calendar-1.svg" width="20px" height="20px" class="ms-3"
+                            loading="lazy" alt="الولايات المتحدة" loading="lazy">
+                          2 - 5 سنة
+                        </p>
+                      </div>
+                      <p class="cmp-link">
+                        <img src="./assets/images/domain-1.svg" width="20px" height="20px" class="ms-2" loading="lazy" alt="الولايات المتحدة"
+                          loading="lazy">
+                        <a href="#" class="text-light">http://www.codehow.com</a>
+                      </p>
+      
+      
+                    </div>
+                  </div>
+                  <div class="comp_rating d-flex flex-column align-items-center justify-content-center">
+                    <span>تقييم</span>
+                    <div class="rate-number" dir="ltr">
+                      1 <span>/ 5</span>
+                    </div>
+                    <div class="starts" dir="ltr">
+                      <i class="fa-solid fa-star complete"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <span class="type ms-2">خطر</span>
+      
+                    </div>
+                  </div>
+                </div>
+                <div class="header-action d-flex">
+                  <button class="btn btn-h-1 ">الابلاغ عن الشركة </button>
+                  <button class="btn  btn-h-2 ">اضيف تقييم </button>
+                </div>
+            </header>
+          </div>
+        </div>
+      </div>
+      <hr>
+    <div class="container p-0 ">
+      <div class="scapm-page-content ">
+            <!-- table conpany section ======== -->
+          <div class="tablecompany mt-3">
+            <div class="container">
+                     <div class="d-flex align-items-center mt-2 mb-2">
+          <div class="d-flex gap-2 align-items-center mt-2 mb-3">
+            <i class="fa-solid fa-user-tie author_name text-adjust"></i>
+            <small class="author_name text-adjust">
+            <a href="">احمد خليل</a>
+            </small>
+            <i class="fa-solid fa-pen-to-square mr-2 author_name text-adjust"></i>
+            <small class="author_name text-adjust">نشر </small>
+            <small class="author_name text-adjust">2023-07-31</small>
+            <i class="fa-solid fa-clock-rotate-left mr-2 author_name text-adjust"></i>
+            <small class="author_name text-adjust"> التحديث</small>
+            <small class="author_name text-adjust">2023-07-31</small>
+            </div>
+         </div>
+                <h1 class="border-b fw-bold mt-4 mb-3 h3">  تفاصيل اكتر عن الشركة</h1>
+                <div>
+                    <table class="table property-group review-table " >
+                        <tbody>
+                        <tr dir="rtl">
+                            <th class="tradingplatform"> 💻 منصات التداول </th>
+                        <td class="tradingplatform1 ">
+                            <span class="me-1">MT5</span> | <span class="ms-1 me-1">Mobile App</span> | <span class="ms-1">WebTrader</span>
+                        </td>
+                        </tr>
+                        <tr >
+                            <th class="tradingplatform">⚖️ تراخيص التداول </th>
+                        <td class="tradingplatform1 ">
+                            <span class="me-1">MT5</span> | <span class="ms-1 me-1">Mobile App</span> | <span class="ms-1">WebTrader</span>
+                        </td>
+                        </tr>
+                        <tr>
+                            <th class="tradingplatform">🏦 مكاتب محلية </th>
+                        <td class="tradingplatform1 ">
+                        <img class="flagimage" src="https://daman.reviews/flags/ae.svg" loading="lazy" alt="United Arab Emirates" width="20px" height="20px">
+                        </td>
+                        </tr>
+                        <tr>
+                            <th class="tradingplatform"> <img src="./assets/images/scam/withdraw-option.svg" width="20" height="20" loading="lazy" alt="الايداع"> خيارات الإيداع </th>
+    
+                        <td class="tradingplatform1 ">
+                        عملات رقمية,
+                        تحويل بنكي,
+                        فيزا كارد,
+                        سكريل,
+                        بيرفكت موني,
+                        نيتيلر,
+                        ماستر كارد
+                        </td>
+                        </tr>
+                        <tr>
+                            <th class="tradingplatform">💵 خيارات السحب </th>
+                        <td class="tradingplatform1 ">
+                        عملات رقمية,
+                        تحويل بنكي,
+                        فيزا كارد,
+                        سكريل,
+                        بيرفكت موني,
+                        نيتيلر,
+                        ماستر كارد
+                        </td>
+                        </tr>
+                        <tr>
+                            <th class="tradingplatform">💹 الأصول المالية المتاحة للتداول </th>
+                        <td class="tradingplatform1 ">
+                        الفوركس,
+                        الاسهم,
+                        المؤشرات,
+                        السلع
+                        </td>
+                        </tr>
+                        <tr>
+                            <th class="tradingplatform">🕠 حساب تجريبي </th>
+                        <td class="tradingplatform1 "> Yes </td>
+                        </tr>
+                        <tr>
+                            <th class="tradingplatform">💸 عمولة السحب </th>
+                        <td class="tradingplatform1 "> Yes </td>
+                        </tr>
+                        <tr>
+                            <th class="tradingplatform">💲 اقل قيمة للايداع </th>
+                        <td class="tradingplatform1 "> $5 </td>
+                        </tr>
+                        <tr>
+                            <th class="tradingplatform">🕋 حساب اسلامي </th>
+                        <td class="tradingplatform1 "> Yes </td>
+                        </tr>
+                        <tr>
+                            <th class="tradingplatform">📆 سنة التأسيس </th>
+                        <td class="tradingplatform1 "> 2007 </td>
+                        </tr>
+                        </tbody>
+                        </table>
+                </div>
+         
+            </div>
+          </div>
+         <!-- // scamp warning  Section (التحذيرات) -->
+     <div class="scamp-warning mt-5">
+      <div class="container">
+        <div class="content px-4 py-2 ">
+         <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <g clip-path="url(#clip0_645_17394)">
+                  <path d="M22.5103 13.7601C22.1395 13.2482 21.9398 12.6322 21.9398 12.0001C21.9398 11.368 22.1395 10.752 22.5103 10.2401L23.2703 9.19011C23.3633 9.0619 23.4244 8.91345 23.4488 8.75698C23.4731 8.60051 23.4599 8.4405 23.4103 8.29011C23.3602 8.1413 23.2764 8.0061 23.1654 7.89507C23.0543 7.78405 22.9191 7.70021 22.7703 7.65011L21.5403 7.25011C20.9378 7.05575 20.4126 6.67496 20.0405 6.16271C19.6685 5.65045 19.4688 5.03323 19.4703 4.40011V3.10011C19.4702 2.94228 19.4327 2.78671 19.361 2.64614C19.2892 2.50556 19.1852 2.38397 19.0574 2.29131C18.9296 2.19865 18.7817 2.13755 18.6258 2.11301C18.4699 2.08847 18.3104 2.10118 18.1603 2.15011L16.9203 2.55011C16.3183 2.74491 15.6702 2.74439 15.0685 2.54862C14.4668 2.35285 13.9424 1.97186 13.5703 1.46011L12.8103 0.410112C12.7133 0.288421 12.5901 0.190158 12.4499 0.122624C12.3096 0.0550893 12.156 0.0200195 12.0003 0.0200195C11.8447 0.0200195 11.691 0.0550893 11.5508 0.122624C11.4106 0.190158 11.2874 0.288421 11.1903 0.410112L10.4303 1.46011C10.0582 1.97186 9.53386 2.35285 8.93218 2.54862C8.3305 2.74439 7.68233 2.74491 7.08034 2.55011L5.84034 2.15011C5.69028 2.10118 5.53077 2.08847 5.37485 2.11301C5.21894 2.13755 5.07104 2.19865 4.94327 2.29131C4.8155 2.38397 4.71147 2.50556 4.6397 2.64614C4.56793 2.78671 4.53045 2.94228 4.53034 3.10011V4.40011C4.53187 5.03323 4.3322 5.65045 3.96014 6.16271C3.58808 6.67496 3.06288 7.05575 2.46034 7.25011L1.23034 7.65011C1.08153 7.70021 0.946326 7.78405 0.835299 7.89507C0.724273 8.0061 0.640434 8.1413 0.590338 8.29011C0.54075 8.4405 0.527583 8.60051 0.551923 8.75698C0.576262 8.91345 0.637412 9.0619 0.730338 9.19011L1.49034 10.2401C1.86118 10.752 2.06085 11.368 2.06085 12.0001C2.06085 12.6322 1.86118 13.2482 1.49034 13.7601L0.730338 14.8101C0.637412 14.9383 0.576262 15.0868 0.551923 15.2432C0.527583 15.3997 0.54075 15.5597 0.590338 15.7101C0.640434 15.8589 0.724273 15.9941 0.835299 16.1052C0.946326 16.2162 1.08153 16.3 1.23034 16.3501L2.46034 16.7501C3.06288 16.9445 3.58808 17.3253 3.96014 17.8375C4.3322 18.3498 4.53187 18.967 4.53034 19.6001V20.9001C4.53045 21.0579 4.56793 21.2135 4.6397 21.3541C4.71147 21.4947 4.8155 21.6163 4.94327 21.7089C5.07104 21.8016 5.21894 21.8627 5.37485 21.8872C5.53077 21.9118 5.69028 21.899 5.84034 21.8501L7.07034 21.4501C7.67361 21.252 8.32424 21.2509 8.92821 21.4468C9.53219 21.6427 10.0582 22.0256 10.4303 22.5401L11.1903 23.5901C11.2837 23.7172 11.4057 23.8206 11.5464 23.8918C11.6871 23.9631 11.8426 24.0002 12.0003 24.0002C12.1581 24.0002 12.3136 23.9631 12.4543 23.8918C12.595 23.8206 12.717 23.7172 12.8103 23.5901L13.5703 22.5401C13.9431 22.0263 14.4691 21.644 15.0729 21.4482C15.6767 21.2523 16.327 21.253 16.9303 21.4501L18.1603 21.8501C18.3104 21.899 18.4699 21.9118 18.6258 21.8872C18.7817 21.8627 18.9296 21.8016 19.0574 21.7089C19.1852 21.6163 19.2892 21.4947 19.361 21.3541C19.4327 21.2135 19.4702 21.0579 19.4703 20.9001V19.6001C19.4688 18.967 19.6685 18.3498 20.0405 17.8375C20.4126 17.3253 20.9378 16.9445 21.5403 16.7501L22.7703 16.3501C22.9191 16.3 23.0543 16.2162 23.1654 16.1052C23.2764 15.9941 23.3602 15.8589 23.4103 15.7101C23.4599 15.5597 23.4731 15.3997 23.4488 15.2432C23.4244 15.0868 23.3633 14.9383 23.2703 14.8101L22.5103 13.7601ZM16.7103 10.7071L11.7103 15.7071C11.5228 15.8946 11.2685 15.9999 11.0033 15.9999C10.7382 15.9999 10.4839 15.8946 10.2963 15.7071L7.29634 12.7071C7.20083 12.6149 7.12465 12.5045 7.07224 12.3825C7.01983 12.2605 6.99224 12.1293 6.99109 11.9965C6.98993 11.8637 7.01524 11.7321 7.06552 11.6092C7.1158 11.4863 7.19005 11.3746 7.28394 11.2807C7.37784 11.1868 7.48949 11.1126 7.61238 11.0623C7.73528 11.012 7.86696 10.9867 7.99974 10.9879C8.13252 10.989 8.26374 11.0166 8.38574 11.069C8.50775 11.1214 8.61809 11.1976 8.71034 11.2931L11.0003 13.5861L15.2933 9.29311C15.4819 9.11095 15.7345 9.01016 15.9967 9.01244C16.2589 9.01472 16.5097 9.11989 16.6952 9.30529C16.8806 9.4907 16.9857 9.74152 16.988 10.0037C16.9903 10.2659 16.8895 10.5185 16.7073 10.7071H16.7103Z" fill="#0E9347"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_645_17394">
+                    <rect width="24" height="24" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+           <span>تحذير من منصات الاحتيال </span>
+         </h3>
+         <p dir="rtl" >
+          التداول عبر الإنترنت هو عملية شراء وبيع الأصول المالية مثل الأسهم والعملات الأجنبية والسلع والمشتقات المالية وغيرها، وذلك باستخدام الإنترنت كوسيلة للتواصل والتعامل. يعتبر التداول عبر الإنترنت طريقة شائعة للمستثمرين والتجار للوصول إلى الأسواق المالية والقيام بالعمليات التجارية والاستثمارية بسرعة وسهولة. التداول عبر الإنترنت هو عملية شراء وبيع الأصول المالية مثل الأسهم والعملات الأجنبية والسلع والمشتقات المالية وغيرها، وذلك باستخدام الإنترنت كوسيلة للتواصل والتعامل.
+         </p>
+        </div>
+
+        <div class="scamp-waring-img mt-3">
+          <img  class="w-100" src="./assets/images/scam/scam-main.png" 
+          loading="lazy" alt="صورة لتحذبرات"  height="400">
+        </div>
+      </div>
+     </div>
+
+      <!-- ==scam company definition (تعريف الشركة ) ===== -->
+      <div class="scam-company-def mt-4 mt-lg-5">
+        <div class="container">
+          <h3 class="border-b"> نبذة تعريفية عن الشركة</h3>
+          <div class="def-text mt-3">
+            <p>التداول عبر الإنترنت هو عملية شراء وبيع الأصول المالية مثل الأسهم والعملات الأجنبية والسلع والمشتقات المالية وغيرها، وذلك باستخدام الإنترنت كوسيلة للتواصل والتعامل. يعتبر التداول عبر الإنترنت طريقة شائعة للمستثمرين والتجار للوصول إلى الأسواق المالية والقيام بالعمليات التجارية والاستثمارية بسرعة وسهولة. التداول عبر الإنترنت هو عملية شراء وبيع الأصول المالية مثل الأسهم والعملات الأجنبية والسلع والمشتقات المالية وغيرها، وذلك باستخدام الإنترنت كوسيلة للتواصل والتعامل.
+            </p>
+            <p >التداول عبر الإنترنت هو عملية شراء وبيع الأصول المالية مثل الأسهم والعملات الأجنبية والسلع والمشتقات المالية وغيرها، وذلك باستخدام الإنترنت كوسيلة للتواصل والتعامل. يعتبر التداول عبر الإنترنت طريقة شائعة للمستثمرين والتجار للوصول إلى الأسواق المالية والقيام بالعمليات التجارية والاستثمارية بسرعة وسهولة. التداول عبر الإنترنت هو عملية شراء وبيع الأصول المالية مثل الأسهم والعملات الأجنبية والسلع والمشتقات المالية وغيرها، وذلك باستخدام الإنترنت كوسيلة للتواصل والتعامل.
+            </p>
+            <p>
+              التداول عبر الإنترنت هو عملية شراء وبيع الأصول المالية مثل الأسهم والعملات الأجنبية والسلع والمشتقات المالية وغيرها، وذلك باستخدام الإنترنت كوسيلة للتواصل والتعامل. يعتبر التداول عبر الإنترنت طريقة شائعة للمستثمرين والتجار للوصول إلى الأسواق المالية والقيام بالعمليات التجارية والاستثمارية بسرعة وسهولة. التداول عبر الإنترنت هو عملية شراء وبيع الأصول المالية مثل الأسهم والعملات الأجنبية والسلع والمشتقات المالية وغيرها، وذلك باستخدام الإنترنت كوسيلة للتواصل والتعامل.
+            </p>
+          </div>
+          <div class="scamp-waring-img mt-3">
+            <img  class="w-100" src="./assets/images/scam/scam-main.png" 
+            loading="lazy" alt="صورة لتحذبرات"  height="400">
+          </div>
+        </div>
+      </div>
+            <!-- ======= scam question section (الاسئلة ) =========== -->
+        <div class="scam-question mt-4 mt-md-5" dir="rtl">
+          <div class="container">
+            <h3 class="border-b">الاسئلة المكررة عن الشركة</h3>
+            <div class="content mt-2 mt-lg-4">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="heading59">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse59" aria-expanded="false" aria-controls="collapse59">
+                  <h6 class="fw-semibold  ">
+                &nbsp;كيف أبدأ في تداول العملات؟
+                </button>
+              </h6>
+                </h2>
+                <div id="collapse59" class="accordion-collapse collapse" aria-labelledby="heading59" data-bs-parent="#accordionExample" >
+                <div class="accordion-body">
+                <p dir="rtl" class="fw-normal">افتح حسابًا للتداول، قم بإيداع الأموال، تعلم وضع استراتيجية التداول، وابدأ بتنفيذ الصفقات.</p>
+                </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="heading60">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse60" aria-expanded="false" aria-controls="collapse60">
+                  <h6 class="fw-semibold">
+                &nbsp;هل تداول العملات الرقمية قانوني في السعودية؟
+              </h6>
+              </button>
+                </h2>
+                <div id="collapse60" class="accordion-collapse collapse" aria-labelledby="heading60" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                <p dir="rtl" class="fw-normal">لا يوجد حظر رسمي لتداول العملات الرقمية في السعودية</p>
+                </div>
+                </div>
+                </div>
+                
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading62">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse62" aria-expanded="false" aria-controls="collapse62">
+                    <h6 class="fw-semibold">
+                  &nbsp; ما هو التدوال عبر الانترنت     
+                </h6>
+                </button>
+                  </h2>
+                  <div id="collapse62" class="accordion-collapse collapse" aria-labelledby="heading62" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                  <p dir="rtl" class="fw-normal">التداول عبر الإنترنت هو عملية شراء وبيع الأصول المالية مثل الأسهم والعملات الأجنبية والسلع والمشتقات المالية وغيرها، وذلك باستخدام الإنترنت كوسيلة للتواصل والتعامل. يعتبر التداول عبر الإنترنت طريقة شائعة للمستثمرين والتجار للوصول إلى الأسواق المالية والقيام بالعمليات التجارية والاستثمارية بسرعة وسهولة 
+                    التداول عبر الإنترنت هو عملية شراء وبيع الأصول المالية مثل الأسهم والعملات الأجنبية والسلع والمشتقات المالية وغيرها، وذلك باستخدام الإنترنت كوسيلة للتواصل والتعامل. يعتبر التداول عبر الإنترنت طريقة شائعة للمستثمرين والتجار للوصول إلى الأسواق المالية والقيام بالعمليات التجارية والاستثمارية بسرعة وسهول
+                    .
+                     </p>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading63">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse62" aria-expanded="false" aria-controls="collapse63">
+                      <h6 class="fw-semibold">
+                    &nbsp; ما هو التدوال عبر الانترنت     
+                  </h6>
+                  </button>
+                    </h2>
+                    <div id="collapse63" class="accordion-collapse collapse" aria-labelledby="heading63" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    <p dir="rtl" class="fw-normal">التداول عبر الإنترنت هو عملية شراء وبيع الأصول المالية مثل الأسهم والعملات الأجنبية والسلع والمشتقات المالية وغيرها، وذلك باستخدام الإنترنت كوسيلة للتواصل والتعامل. يعتبر التداول عبر الإنترنت طريقة شائعة للمستثمرين والتجار للوصول إلى الأسواق المالية والقيام بالعمليات التجارية والاستثمارية بسرعة وسهولة 
+                      التداول عبر الإنترنت هو عملية شراء وبيع الأصول المالية مثل الأسهم والعملات الأجنبية والسلع والمشتقات المالية وغيرها، وذلك باستخدام الإنترنت كوسيلة للتواصل والتعامل. يعتبر التداول عبر الإنترنت طريقة شائعة للمستثمرين والتجار للوصول إلى الأسواق المالية والقيام بالعمليات التجارية والاستثمارية بسرعة وسهول
+                      .
+                       </p>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+        </div>
+        
+        <!-- //==================== comments section  التعليقات ================// -->
+        <div class="scam_commentRate_section mt-4 mt-sm-5">
+           <div class="container">
+            <h3 class="border-b">التعليقات</h3>
+              <div class="content  mt-3 p-3 ">
+            <div class="comment_box">
+              <div class="comment-head d-flex justify-content-between">
+               <div class="user_name d-flex align-items-center"> 
+                <span class="p-2 d-flex align-items-center justify-content-center rounded-circle bg-info text-uppercase"> AM</span> <span class="me-2">محمد السعودي</span></div>
+              <div class="comment_date d-flex align-items-center">7/8/2023</div>
+              </div>
+              <div class="comment-rate me-4 mt-1">
+                <i class="fa-solid fa-star complete"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="comment_body me-4 mb-0 ">
+                <p class=" fw-normal" style="margin-bottom: 0 !important;">
+                  شركةاكسي جدا سيئة وسمعة عالفاضي خدمات تداول صفر              </p>
+              </div>
+              <div class="comment_replay_icon me-4" id="replay">
+                <i class="fa-solid fa-reply p-0 m-0 "></i> <span> رد </span>
+              </div>
+            </div>
+               <div class="container px-sm-5">
+                <div class="replay_box p-2" >
+                  <div class="replay-head d-flex justify-content-between ms-4">
+                   <div class="user_name d-flex align-items-center"> 
+                    <span class="p-2 d-flex align-items-center justify-content-center rounded-circle bg-info text-uppercase"> AM</span> <span class="me-2">محمد السعودي</span></div>
+                  <div class="replay_date d-flex align-items-center">7/8/2023</div>
+                  </div>
+                  <div class="replay-rate me-4 mt-1">
+                    <i class="fa-solid fa-star complete"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="comment_body me-4 ">
+                    <p class=" fw-normal">
+                    عادةً ما يتضمن هذا استخدام أنظمة التداول الإلكترونية التي توفر الرسوم 
+                  </p>
+                  </div>
+                  <div class="comment_replay_icon me-4" id="replay">
+                    <i class="fa-solid fa-reply p-0 m-0 "></i> <span> رد </span>
+                  </div>
+
+                </div>
+               </div>
+              </div>
+              <div class="content mt-3  p-3 " style="background-color: #f7f7f7;">
+                <div class="comment_box">
+                  <div class="comment-head d-flex justify-content-between">
+                   <div class="user_name d-flex align-items-center"> 
+                    <span class="p-2 d-flex align-items-center justify-content-center rounded-circle bg-info text-uppercase"> AM</span> <span class="me-2">محمد السعودي</span></div>
+                  <div class="comment_date d-flex align-items-center">7/8/2023</div>
+                  </div>
+                  <div class="comment-rate me-4 mt-1">
+                    <i class="fa-solid fa-star complete"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <div class="comment_body me-4 ">
+                    <p class=" fw-normal">
+                    عادةً ما يتضمن هذا استخدام أنظمة التداول الإلكترونية التي توفر الرسوم ا
+                  </p>
+                  </div>
+                  <div class="comment_replay_icon me-4" id="replay">
+                    <i class="fa-solid fa-reply p-0 m-0 "></i> <span> رد </span>
+                  </div>
+                </div>
+                  </div>
+           </div>
+        </div>
+
+        <!-- // =========== Rating Section======== -->
+        <div class="company_rating mt-4 mt-sm-5">
+          <div class="container">
+            <h3 class="border-b">شارك تقييمك لهذه الشركة</h3>
+          <div class="shareratingform mt-3 mt-sm-4">
+            <p class="text-danger">المعلومات الشخصية يجب ان تكون صحيحة لنشر&nbsp;التقييم.</p>
+            <form method="POST" action="" id="news-form" enctype="multipart/form-data" data-parsley-validate="" novalidate="">
+            <div>
+            <div class="star-source">
+            <svg>
+            <linearGradient x1="50%" y1="5.41294643%" x2="87.5527344%" y2="65.4921875%" id="grad">
+            <stop stop-color="gold" offset="0%"></stop>
+            <stop stop-color="gold" offset="60%"></stop>
+            <stop stop-color="gold" offset="100%"></stop>
+            </linearGradient>
+            <symbol id="star" viewBox="153 89 106 108">
+            <polygon id="star-shape" stroke="url(#grad)" stroke-width="5" fill="currentColor" points="206 162.5 176.610737 185.45085 189.356511 150.407797 158.447174 129.54915 195.713758 130.842203 206 95 216.286242 130.842203 253.552826 129.54915 222.643489 150.407797 235.389263 185.45085">
+            </polygon>
+            </symbol>
+            </svg>
+            </div>
+            <div class="star-container">
+            
+            <input type="radio" name="star" id="five" value="5" data-parsley-required-message="هذه القيمة مطلوبة" autocomplete="off" data-parsley-multiple="star">
+            <label for="five" aria-label="five stars rate">
+            <svg class="star">
+            <use xlink:href="#star"></use>
+            </svg>
+            </label>
+            <input type="radio" name="star" id="four" value="4" required="" data-parsley-required-message="هذه القيمة مطلوبة" autocomplete="off" data-parsley-multiple="star">
+            <label for="four" aria-label="four stars rate">
+            <svg class="star">
+            <use xlink:href="#star"></use>
+            </svg>
+            </label>
+            <input type="radio" name="star" id="three" value="3" required="" data-parsley-required-message="هذه القيمة مطلوبة" autocomplete="off" data-parsley-multiple="star">
+            <label for="three" aria-label="three stars rate">
+            <svg class="star">
+            <use xlink:href="#star"></use>
+            </svg>
+            </label>
+            <input type="radio" name="star" id="two" value="2" required="" data-parsley-required-message="هذه القيمة مطلوبة" autocomplete="off" data-parsley-multiple="star">
+            <label for="two">
+            <svg class="star" aria-label="two stars rate">
+            <use xlink:href="#star"></use>
+            </svg>
+            </label>
+            <input type="radio" name="star" id="one" value="1" required="" data-parsley-required-message="هذه القيمة مطلوبة" autocomplete="off" data-parsley-multiple="star">
+            <label for="one">
+            <svg class="star" aria-label="one stars rate">
+            <use xlink:href="#star"></use>
+            </svg>
+            </label>
+            </div>
+            </div>
+            <div>
+            
+            </div>
+            <div>
+            <div class="row">
+            <div class="col-12 col-md-6">
+            <div class="mb-3">
+            <small for="name" class="form-label"> الإسم الكامل <span class="text-danger">*</span></small>
+            <input type="text" class="form-control" name="name" maxlength="20" data-parsley-required-message="هذه القيمة مطلوبة" required="" id="name" autocomplete="off">
+            </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="mb-3">
+              <small for="email" class="form-label"> رقم الهاتف<span class="text-danger">*</span></small>
+              <input type="number" class="form-control" name="phone" data-parsley-type-message="يجب أن يكون بريداُ إلكترونياً صالحاً" data-parsley-required-message="هذه القيمة مطلوبة" required="" id="phone" aria-describedby="emailHelp" autocomplete="off">
+              </div>
+              </div>
+            <div class="col-12 col-md-6">
+            <div class="mb-3">
+            <small for="email" class="form-label">البريد الإلكتروني<span class="text-danger">*</span></small>
+            <input type="email" class="form-control" name="email" data-parsley-type-message="يجب أن يكون بريداُ إلكترونياً صالحاً" data-parsley-required-message="هذه القيمة مطلوبة" required="" id="email" aria-describedby="emailHelp" autocomplete="off">
+            </div>
+            </div>
+            <div class="mb-3">
+            <small for="comment" class="form-label"> التعليقات<span class="text-danger">*</span></small>
+            <textarea name="comment" class="form-control" required="" id="comment" rows="5" data-parsley-required-message="هذه القيمة مطلوبة" autocomplete="off"></textarea>
+            </div>
+            <div class="" dir="rtl">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required="" data-parsley-required-message="هذه القيمة مطلوبة" autocomplete="off" data-parsley-multiple="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+            أوافق على <a class="text-success" href="" target="”_blank”">سياسة الخصوصية</a> لموقع ضمان
+            </label>
+            </div>
+            </div>
+            <button type="submit" class="tradingbtn  mt-1">إرسال </button>
+            </div>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+  <!-- ////====================Footer Section =============/// -->
+  <footer class="position-relative">
+    <div class="mx-auto top-footer pb-0">
+      <div class=" container-sm">
+        <div class="row mb-3">
+          <div class="col-12 col-sm-6  col-lg-3 ">
+            <!-- //logo  -->
+            <a href="#">
+              <img src="./assets/images/logo.svg" loading="lazy" alt="منصات الاحتيال">
+            </a>
+            <div class="contact ">
+              <h4>تواصل معنا عبر مواقع التواصل الاجتماعى</h4>
+              <h6> kenzi.lawson@example.com <i class="fa-solid fa-envelope"></i></h6>
+            </div>
+          </div>
+          <div class=" col-12 col-sm-6 mt-4 mt-sm-0 col-lg-3 ">
+            <div class="links float-end ">
+              <h6 class="fw-bold">لينكات اخرى</h6>
+              <a href="#" >عروص شركات التدوال</a>
+              <a href="#">روابط مهمة</a>
+              <a href="#">التحليل الفنى والتوصيات</a>
+              <a href="#">شركات التدوال</a>
+            </div>
+          </div>
+          <div class=" col-12 col-sm-6 mt-3  mt-md-1 col-lg-3 ">
+            <div class="links  ">
+              <h6 class="fw-bold">لينكات اخرى</h6>
+              <a href="#">عروص شركات التدوال</a>
+              <a href="#">روابط مهمة</a>
+              <a href="#">التحليل الفنى والتوصيات</a>
+              <a href="#">شركات التدوال</a>
+            </div>
+          </div>
+          <div class=" col-12 col-sm-6  mt-3  mt-sm-3 mt-md-1 col-lg-3 ">
+            <div class="links  ">
+              <h6 class="fw-bold">لينكات اخرى</h6>
+              <a href="#">عروص شركات التدوال</a>
+              <a href="#">روابط مهمة</a>
+              <a href="#">التحليل الفنى والتوصيات</a>
+              <a href="#">شركات التدوال</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-footer">
+      <div class="header">
+        <div class="container">
+          <div
+            class="d-flex justify-content-between flex-column flex-sm-row  align-items-center flex-wrap mx-auto justify-content-sm-between">
+            <div class="evalution d-flex">
+              <div class="eval_text ms-2">ممتاز </div>
+              <div class="rate ms-2">4.3 من 5 </div>
+              <div>
+              </div>
+              <i class="fa-solid fa-star" style="color:green"></i>
+              ثقة
+            </div>
+            <div class="icon d-flex mt-2 mt-sm-0 text-white">
+              <a href="https://www.twitter.com/">
+                <i class="fa-brands fa-twitter  rounded-circle p-2 bg-dark ms-2"></i>
+              </a>
+              <a href="https://www.linkedin.com/">
+                <i class="fa-brands fa-square-instagram rounded-circle p-2 bg-dark ms-2"></i>
+              </a>
+              <a href="https://www.instagram.com/">
+                <i class="fa-brands fa-linkedin-in rounded-circle p-2 bg-dark ms-2"></i>
+              </a>
+              <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube rounded-circle p-2 bg-dark ms-2"></i></a>
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f rounded-circle p-2 bg-dark ms-2"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="body-footer ">
+        <div class="container">
+          <div class="content ">
+            <p>
+              <span class="text-dark">اشعار الاستثمار عالي المخاطر:</span>
+              ينطوي التداول عبر الإنترنت بهامش على درجة عالية من المخاطر وقد لا يكون مناسبًا لجميع المستثمرين حيث قد
+              تتكبد خسائر تزيد عن الودائع. المنتجات مخصصة لعملاء التجزئة والمهنيين والمؤهلين. بالنسبة للعملاء الذين
+              لديهم حساب (حسابات) مع موقع منصات الاحتيال، يمكن لعملاء التجزئة أن يتكبدوا خسارة كاملة للأموال المودعة
+              ولكنهم لا يخضعون لالتزامات الدفع اللاحقة بخلاف الأموال المودعة ويمكن للعملاء المحترفين أن يتكبدوا خسائر
+              تزيد عن الودائع. قبل تداول أي منتجات تقدمها موقع منصات الاحتيال، أو أي شركات تابعة للشركات المذكورة أعلاه
+              ، أو شركات أخرى ضمن 4XC من الشركات [يشار إليها مجتمعة باسم "، ضع في اعتبارك وضعك المالي ومستوى خبرتك
+              بعناية. قد تقد تعليقًا عامًا لا يُقصد به أن تكون نصيحة استثمارية ويجب ألا يُفسر على هذا النحو. اطلب
+              المشورة من مستشار مالي منفصل. لا تتحمل أي مسؤولية عن الأخطاء أو عدم الدقة أو السهو ؛ لا تضمن دقة أو اكتمال
+              المعلومات أو النصوص أو الرسومات أو الروابط أو العناصر الأخرى الواردة في هذه المواد. اقرأ واستوعب الشروط
+              والأحكام على مواقع قبل اتخاذ المزيد من الإجراءات.
+            </p>
+            <p class="mt-1 mt-sm-4">4XC هي علامة تجارية لشركة 4xCube Ltd ، مسجلة في جزر كوك برقم ICA 12767/2018 ومرخصة
+              من قبل FSC (هيئة الرقابة المالية) برخصة تغيير الأموال رقم MC03 / 2018</p>
+
+            <div class="d-flex align-items-center flex-wrap ">
+              <p class="mt-1 mt-sm-4 coun">
+                لا تقدم 4xCube Ltd خدماتها للمقيمين في بعض الولايات القضائية مثل
+                <span class="text-decoration-underline me-1">العراق </span> <span
+                  class="text-decoration-underline me-1">الولايات المتحدة </span>
+                <span class="text-decoration-underline me-1">ايران </span>
+              </p>
+              <p class="mt-1 mt-sm-3">الراعي الرسمي :</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy-write ">
+        <div class="container">
+          <div class="content d-flex flex-wrap align-items-center">
+            <div class="logo ms-1 ms-s-3">
+              <a href="#">
+                <img src="./assets/images/logo.svg" loading="lazy" alt="موقع منصات الاحتيال" width="140" height="70">
+              </a>
+            </div>
+            <p>
+              <span class="">حقوق النشر © 2023 - موقع منصات الاحتيال </span>
+              <span> &nbsp;| &nbsp; </span>
+              <a href="" class=""> الحكم والشروط</a>
+              <span> &nbsp;| &nbsp; </span>
+
+              <a href="" class=""> الافصاح عن المخاطرة </a>
+              <span> &nbsp;| &nbsp; </span>
+
+              <a href="" class="">الخصوصة والسياسة</a>
+              <span> &nbsp;| &nbsp; </span>
+
+              <a href="" class="">من نحن </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="protected">
+      <a href="#" class="d-block">
+        <img src="./assets/images/brands/C2.svg" loading="lazy" alt="projected">
+      </a>
+      <a href="#" class="cmc"> <img src="./assets/images/brands/C2.png" loading="lazy" alt="الراعي الرسمي "></a>
+    </div>
+  </footer>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+
+  </script>
+  </script>
+</body>
+</html>
